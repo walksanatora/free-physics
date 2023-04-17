@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.walksanator.freephys.FreePhysics"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "freephys.mixins.json"
   ],
 
   "depends": {
