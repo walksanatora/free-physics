@@ -10,7 +10,7 @@ import java.util.Map;
 
 @Mixin(HttpRequest.class)
 public class MixinHttpRequest {
-	@Inject(at = @At("RETURN"), method = "get(Ljava/lang/String;)Ljava/lang/String;",cancellable = true)
+	@Inject(at = @At("RETURN"), method = "get(Ljava/lang/String;)Ljava/lang/String;",cancellable = true,remap=false)
 	private void phys$get(String urlToRead, CallbackInfo info) {
 		if (urlToRead.contains("verify.minecraftphysicsmod.com")) {
 			Map<String,String> opts = FreePhysics.getParamsFromUrl(urlToRead);
