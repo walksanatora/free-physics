@@ -16,7 +16,7 @@ public class ExampleMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Congrats on the free physics mod 🙃")
+		LOGGER.info("Congrats on the free physics mod 🙃");
 	}
 
 	public static Map<String, String> getParamsFromUrl(String url) throws Exception {
