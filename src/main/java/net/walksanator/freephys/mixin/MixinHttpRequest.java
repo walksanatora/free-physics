@@ -19,7 +19,7 @@ public class MixinHttpRequest {
 			Map<String,String> opts = FreePhysics.getParamsFromUrl(urlToRead);
 			String code = opts.get("code");
 			if (code != null) {
-				info.cancel()
+				info.cancel();
 				info.setReturnValue(code+"verified");
 				FreePhysics.LOGGER.info("Prevented another usless verification check");
 			}
