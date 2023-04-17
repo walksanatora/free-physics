@@ -1,14 +1,11 @@
 package net.walksanator.freephys.mixin;
 
-import net.walksanator.freephys.ExampleMod;
+import net.walksanator.freephys.FreePhysics;
 import net.diebuddies.util.HttpRequest;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.util.HashMap;
 import java.util.Map;
 
 @Mixin(HttpRequest.class)
